@@ -1,0 +1,32 @@
+# Create proper .gitignore file
+cat > .gitignore << 'EOF'
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+terraform.tfvars
+
+# AWS & Secrets
+.aws/
+*.pem
+secrets.*
+
+# Python
+__pycache__/
+*.py[cod]
+.env
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+EOF
